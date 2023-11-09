@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background: lightblue;
 }
 
 h1,
@@ -21,3 +22,104 @@ h6 {
 p {
   margin: 0;
 }
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  height: 300px;
+}
+
+#work {
+  display: flex;
+  justify-content: space-between;
+  height: 900px;
+}
+
+/* #work h2 {
+  width: 15%;
+  background: red;
+  border-right: 4px solid yellow;
+} */
+
+/* .page-section h2 {
+  width: 300px;
+  background: red;
+  border-right: 4px solid yellow;
+} */
+
+.images {
+  width: 75%;
+  display: grid;
+  grid-template-areas: 
+  'image1 image1'
+  'image2 image3'
+  'image4 image5'
+  ;
+  grid-gap: 30px;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+.image-1 {
+  background-image: url(../images/02-portfolio-1.jpg);
+  grid-area: image1;
+  background-size: cover;
+}
+
+.image-2 {
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  grid-area: image2;
+}
+
+.image-3 {
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  grid-area: image3;
+}
+
+.image-4 {
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  grid-area: image4;
+}
+
+.image-5 {
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+  grid-area: image5;
+}
+
+.img-marg div {
+  background-color: darkgrey;
+  width: fit-content;
+  padding: 5px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about p {
+  border: 5px black solid;
+}
+
+#about h2 {
+  border: 5px black solid;
+  width: 300px;
+}
+
